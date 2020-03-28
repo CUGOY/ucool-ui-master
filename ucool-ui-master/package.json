@@ -1,0 +1,63 @@
+{
+  "name": "ucool-ui-master",
+  "version": "1.2.1",
+  "description": "ucool-基于svelte的ui组件框架",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "build": " webpack --mode=production --progress",
+    "dev": "webpack-dev-server --watch",
+    "analyze": "webpack --env.analyze=true --mode=production --progress",
+    "lint": "npx eslint src --ext .svelte",
+    "lintfix": "npx eslint src --ext .svelte --fix",
+    "size": "npm run build && size-limit"
+  },
+  "keywords": [],
+  "author": "sencang<1832723334@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "bulma": "^0.8.0",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "preload-webpack-plugin": "^3.0.0-beta.3",
+    "prettier": "1.18.2",
+    "size-limit": "^2.1.6",
+    "style-loader": "^1.0.0",
+    "svelte": "^3.12.1",
+    "svelte-loader": "^2.13.6",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "common-tags": "^1.8.0"
+  },
+  "size-limit": [
+    {
+      "limit": "300 KB",
+      "webpack": true,
+      "path": "./build/*.js"
+    }
+  ]
+}
